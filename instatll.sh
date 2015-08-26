@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 V=2.25   # Binutils Version
-ARCH=i386 # Target architecture
+# i386, amd64, arm, mips, mips64
+ARCH=amd64 # Target architecture
 
 MAKE=gmake
 hash gmake || MAKE=make
