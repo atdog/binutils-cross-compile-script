@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 V=2.25   # Binutils Version
-ARCH=arm # Target architecture
+ARCH=i386 # Target architecture
 
 MAKE=gmake
 hash gmake || MAKE=make
@@ -10,7 +10,7 @@ export AS=as
 
 cd /tmp
 
-rm -rf binutils-${V}.tar.gz
+sudo rm -rf binutils-*
 wget -nc https://ftp.gnu.org/gnu/binutils/binutils-${V}.tar.gz
 
 mkdir -p binutils-build
